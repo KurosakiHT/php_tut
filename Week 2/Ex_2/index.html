@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ex_2</title>
+	<style>
+		form{padding: 1px;}
+		input{margin: 3px;}
+	</style>
+</head>
+<body>
+	<h1 style="color: purple">A Simple form</h1>
+	<h2 style="color: #FF4E5D">Form fundamental</h2>
+	<form>
+		<fieldset>
+			<legend>Customer Info</legend>
+				<label>Name: </label>
+				<input name="name" type="text" maxlength="50" placeholder="Enter your name"><br>
+        		<label>Telephone: </label>
+        		<input name="tel" type="tel" placeholder="Pattern: 1-234-567-8910"><br>
+        		<label>E-mail address: </label>
+        		<input name="email" type="email" maxlength="50" placeholder="Enter your email address"><br>
+        		<label>Gender: </label>
+        		<input type="radio" name="gender" id="Male" value="male">
+        		<label for="male">Male</label>
+        		<input type="radio" name="gender" id="Female" value="female">
+        		<label for="female">Female</label><br>
+       			<label>Hobbies: </label>
+        		<label for="Bas">Basketball</label>
+        		<input type="checkbox" name="hobbie" id="Bas" value="Basketball">
+        		<label for="Foot">Female</label>
+        		<input type="checkbox" name="hobbie" id="Foot" value="Football">
+        		<label for="Bad">Female</label>
+        		<input type="checkbox" name="hobble" id="Bad" value="Badminton"><br>
+		</fieldset>
+	</form>
+	<form>
+		<fieldset>
+			<legend>Books</legend>
+				<label>Name: </label>
+        		<input name="name" type="text" placeholder="Enter your name">
+        		<label>Quantity(maximum 5)</label>
+        		<input type="number" min="1" max="5">
+		</fieldset>
+			<input type="submit" value="submit">
+			<input type="reset" value="reset">
+	</form>
+</body>
+</html>
