@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Join!</title>
+	</head>
+	<body>
+		<p>Click the button to join the aray elements into a string</p>
+		<button onclick="joinArray()">Join!</button>
+		<p id="field"></p>
+	</body>
+	<script type="text/javascript">
+		function joinArray() {
+  			var myColors = ["Red", "Green", "White", "Black"];
+  			var result = document.getElementById("field");
+  			result.innerHTML = myColors.join();
+		}
+	</script>
+</html>

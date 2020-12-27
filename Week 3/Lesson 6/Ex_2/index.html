@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Comparing</title>
+	</head>
+	<body>
+		<label>1st Number: </label>
+		<input id="num1" type="Number" name="num1" maxlength="30"><br>
+		<label>2nd Number: </label>
+		<input id="num2" type="Number" name="num2" maxlength="30"><br>
+		<button type="button" onclick="getCompareResult()">Compare</button>
+		<br><p>The Bigger one is:</p>
+		<p id="result"></p>
+	<script type="text/javascript">
+		function getCompareResult() {
+			var num1 = document.getElementById("num1").value;
+			var num2 = document.getElementById("num2").value;
+			var result;
+			if (num1 >= num2) {
+				result = num1;
+			}
+			else {
+				result = num2;
+			}
+			document.getElementById("result").innerHTML = result;
+		}
+	</script>
+	</body>
+</html>
